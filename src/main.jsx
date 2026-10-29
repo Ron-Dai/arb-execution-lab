@@ -145,8 +145,8 @@ function App() {
         >
           <defs>
             <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-              <stop stopColor="#c5edb3" stopOpacity=".16" />
-              <stop offset="1" stopColor="#c5edb3" stopOpacity="0" />
+              <stop stopColor="#69a7ff" stopOpacity=".16" />
+              <stop offset="1" stopColor="#69a7ff" stopOpacity="0" />
             </linearGradient>
           </defs>
           {[24, 70, 116, 162].map((y) => (
@@ -159,13 +159,13 @@ function App() {
               y={230 - d.volume * 0.65}
               width="5"
               height={d.volume * 0.65}
-              fill="#728071"
+              fill="#5d7394"
               opacity=".23"
             />
           ))}
           <path d={`${line("a")} L700,188 L0,188Z`} fill="url(#area)" />
           <path d={line("b")} className="line orange" />
-          <path d={line("a")} className="line green" />
+          <path d={line("a")} className="line blue" />
           {hover !== null && (
             <g>
               <line
@@ -173,14 +173,14 @@ function App() {
                 x2={(hover * 700) / 71}
                 y1="0"
                 y2="230"
-                stroke="#b9c3b4"
+                stroke="#a1b6d6"
                 strokeDasharray="3 4"
               />
               <circle
                 cx={(hover * 700) / 71}
                 cy={y(data[hover].a)}
                 r="4"
-                fill="#cfecbb"
+                fill="#91bcff"
               />
             </g>
           )}
@@ -720,7 +720,7 @@ function App() {
                 >
                   <path
                     d="M0 175L40 160L70 165L100 150L140 156L170 128L210 135L250 118L280 125L310 90L350 102L390 80L430 96L470 67L500 74L540 55L580 73L620 42L660 49L700 24L750 37L790 15L830 32L870 10L910 20L950 5L1000 0"
-                    className="line green"
+                    className="line blue"
                   />
                 </svg>
               </section>
@@ -814,7 +814,7 @@ function App() {
                       </span>
                       <div className="legend">
                         <span>
-                          <i className="legend-green" /> Venue A · YES
+                          <i className="legend-blue" /> Venue A · YES
                         </span>
                         <span>
                           <i className="legend-orange" /> Venue B · YES
@@ -844,7 +844,7 @@ function App() {
                     </div>
                     <div className="depth-legend">
                       <span>
-                        <i className="legend-green" /> Bid (YES)
+                        <i className="legend-blue" /> Bid (YES)
                       </span>
                       <span>
                         <i className="legend-orange" /> Ask (YES)
@@ -858,13 +858,13 @@ function App() {
                     >
                       <path
                         d="M5 12H28V24H54V37H77V55H100V66H124V84H146V112H5Z"
-                        fill="#a7c494"
+                        fill="#8ba5cd"
                         fillOpacity=".13"
                       />
                       <path
                         d="M5 12H28V24H54V37H77V55H100V66H124V84H146V112"
                         fill="none"
-                        stroke="#b7dca1"
+                        stroke="#69a7ff"
                         strokeWidth="1.5"
                       />
                       <path
@@ -883,7 +883,7 @@ function App() {
                         x2="150"
                         y1="0"
                         y2="118"
-                        stroke="#60645b"
+                        stroke="#4a5b75"
                         strokeDasharray="3 4"
                       />
                     </svg>
@@ -902,7 +902,7 @@ function App() {
                         <div className="book-row" key={i}>
                           <span
                             style={{
-                              background: `linear-gradient(to left, #a8c69520 ${75 - i * 17}%, transparent 0)`,
+                              background: `linear-gradient(to left, #8da7ce20 ${75 - i * 17}%, transparent 0)`,
                             }}
                           >
                             {(

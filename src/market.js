@@ -33,7 +33,7 @@ export const markets = [
     liquidity: 26300,
     volume: "$940K",
     confidence: 94,
-    color: "#a0b9a1",
+    color: "#8ba6ce",
   },
   {
     id: "eth",
@@ -57,7 +57,7 @@ export const markets = [
     liquidity: 12900,
     volume: "$610K",
     confidence: 91,
-    color: "#9eb7b5",
+    color: "#89a4cc",
   },
   {
     id: "space",
